@@ -1,0 +1,13 @@
+<article class="container">
+    <h2>Referencias locales</h2>
+      <div class="form-group">
+        <label for="nombre">Local</label>
+        <input type="text" class="form-control" id="nombre" #nombre placeholder="Introduzca Nombre">
+      </div>
+      
+     <button (click)="nombre.value=''" class="btn btn-primary">Borrar</button>
+    
+    <div class="alert alert-success" role="alert">
+      <p>Hola {{nombre.value}}</p>
+    </div>
+</article>

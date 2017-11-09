@@ -1,0 +1,13 @@
+<div class="card">
+  <h2 class="card-header">
+    Padre
+  </h2>
+  <div class="card-body">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" [(ngModel)]="nombre" placeholder="Escribe un nombre">
+        <p class="card-text">Nombre escrito: {{nombre}}</p>
+      </div>
+      <app-hijo [miNombre]="nombre" (recibido)="responderRecibido($event)"></app-hijo>
+  </div>
+</div>

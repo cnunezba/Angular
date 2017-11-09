@@ -1,0 +1,21 @@
+<article class="container">
+  
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" [(ngModel)]="nombre" placeholder="Introduzca Nombre">
+      </div>
+      
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" [(ngModel)]="isSpanish" class="form-check-input">
+          Español?
+        </label>
+      </div>
+      <button (click)="borrarFormulario()" class="btn btn-primary">Borrar</button>
+    
+
+    <div class="alert alert-success" role="alert">
+      <p>Nombre introducido: {{nombre}}</p>
+      <p>{{isSpanish?'Gracias':'Thanks' }}</p>
+    </div>
+</article>
